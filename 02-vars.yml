@@ -1,10 +1,12 @@
 - name: Play variables
   hosts: localhost
   vars:
-     URL: play.example.com
-     URL: show.example.com
-     URL: Book.example.com
+     URL1: play.example.com
+     URL2: show.example.com
+     URL3: Book.example.com
   tasks:
     - name: Print play variable
       ansible.builtin.debug:
-        msg: URL = {{URL}}
+        msg: URL1 = {{URL}}
+        msg: URL2 = {{URL}}
+        msg: URL3 = {{URL}}
