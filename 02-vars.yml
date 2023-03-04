@@ -34,4 +34,4 @@
   tasks:
     - name: Print Play Variable from Inventory
       ansible.builtin.debug:
-        msg: "{{URL}}"
+        msg: URL = {{URL}}
