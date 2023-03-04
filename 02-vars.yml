@@ -2,6 +2,8 @@
   hosts: localhost
   vars:
      URL: play.example.com
+     URL: show.example.com
+     URL: Book.example.com
   tasks:
     - name: Print play variable
       ansible.builtin.debug:
