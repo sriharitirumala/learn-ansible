@@ -7,6 +7,6 @@
   tasks:
     - name: Print play variable
       ansible.builtin.debug:
-        msg: URL1 = {{URL}}
-        msg: URL2 = {{URL}}
-        msg: URL3 = {{URL}}
+        msg: URL = {{URL1}}
+        msg: URL = {{URL2}}
+        msg: URL = {{URL3}}
