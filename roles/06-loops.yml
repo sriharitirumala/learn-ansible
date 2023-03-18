@@ -13,7 +13,7 @@
       debug:
         msg: Fruit Name - {{ item.name }} , Quantity - {{ item.quantity }}
       loop:
-        - { name: "Apple", Quantity:10 }
-        - { name: "Banana", Quantity:20 }
-        - { name: "Orange", Quantity:30 }
-        - { name: "Mango", Quantity:40 }
+        - { name: "Apple", Quantity: 10 }
+        - { name: "Banana", Quantity: 20 }
+        - { name: "Orange", Quantity: 30 }
+        - { name: "Mango", Quantity: 40 }
