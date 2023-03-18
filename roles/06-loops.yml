@@ -1,0 +1,19 @@
+- name: Loops Demo
+  hosts: localhost
+  tasks:
+    - name: Print Fruit Name
+      debug:
+        msg: Fruit Name - Apple
+      loop:
+        - Apple
+        - Banana
+        - Orange
+        - Mango
+    - name: Print Fruit name with Quantity
+      debug:
+        msg: Fruit Name - {{ item.name }} , Quantity - {{ item.quantity }}
+      loop:
+        - { name: "Apple", Quantity:10 }
+        - { name: "Banana", Quantity:20 }
+        - { name: "Orange", Quantity:30 }
+        - { name: "Mango", Quantity:40 }
